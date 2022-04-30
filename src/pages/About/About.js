@@ -2,11 +2,12 @@ import React from 'react'
 import './About.css'
 import AboutUsPic from '../../assets/AboutUs.jpg'
 import AppDesc from '../../components/AppDesc/AppDesc'
+import Navigation from '../../components/Navigation/Navigation'
 
 const About = () => {
   return (
     <div>
-    
+    <Navigation />
     <div className='aboutUs'>
         <div className='aboutUs__text'>
         <div>

@@ -1,14 +1,13 @@
 import React from 'react' 
-import { Link } from 'react-router-dom'
 import AppDesc from '../../components/AppDesc/AppDesc'
+import Navigation from '../../components/Navigation/Navigation'
 
 const Welcome = () => {
   return (
     
       <div>
+      <Navigation />
           <h1>Welcome</h1>
-          <Link to = '/signup'>Sign Up</Link>
-          <Link to = '/About'>About Us</Link>
           <AppDesc />
       </div>
       

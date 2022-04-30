@@ -7,10 +7,12 @@ import Welcome from './pages/Welcome/Welcome';
 import About from './pages/About/About';
 
 
+
 function App() {
 
   return (
     <div className="App">
+    
       <Routes>
         <Route path = '/' element = {<Welcome />} />
         <Route path = '/signup' element = {<SignUp />} />
