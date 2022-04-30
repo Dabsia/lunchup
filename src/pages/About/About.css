@@ -1,0 +1,38 @@
+.aboutUs{
+    display: flex;
+    justify-content: space-around;
+    padding: 4rem;
+}
+.aboutUs__text{
+    width: 50%;
+    margin-top: 1rem;
+    
+}
+.aboutUs--story, .aboutUs--vision{
+    margin-top: 3rem;
+    width: 47%;
+}
+
+.aboutUs--story__heading, .aboutUs--vision__heading{
+    color: var(--main-color);
+    text-align: center;
+    font-size: 2rem;
+
+}
+.aboutUs--story__text, .aboutUs--vision__text{
+    width: 25rem;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: 2rem;
+    color: #000000;
+}
+
+.aboutUs__image{
+    width: 50%;
+}
+.abtUsImage{
+    width: 100%;
+    height: 100%;
+}
