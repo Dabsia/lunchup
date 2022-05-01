@@ -1,5 +1,5 @@
 import React, {useRef, useState, useContext} from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/favicon.png'
 import '../SignUp/SignUp.css';
 import ImageBanner from '../../components/ImageBanner/ImageBanner';
@@ -11,6 +11,7 @@ const SignIn = () => {
 
   // add Loading when creating a request
   const [isLoading, setIsLoading] = useState(false)
+  const Navigate = useNavigate()
 
   const authCtx = useContext(AuthContext)
 
@@ -60,6 +61,8 @@ const SignIn = () => {
       }
     }).then(data => {
       authCtx.login(data.idToken)
+      Navigate('/')
+
     })
     .catch(err => alert(err.message))
 

@@ -8,6 +8,9 @@ import Button from '../Button/Button'
 const Navigation = () => {
 
     const authCtx = useContext(AuthContext)
+    console.log(authCtx)
+
+    const Navigate = useNavigate()
 
     const isLoggedIn = authCtx.isLoggedIn
 
@@ -18,8 +21,10 @@ const Navigation = () => {
         Navigate('/signup')
     }
     
-
-    const Navigate = useNavigate()
+    const logoutHandler = () => {
+        authCtx.logout()
+    }
+    
 
 
     const navToggle = () => {
@@ -35,22 +40,22 @@ const Navigation = () => {
         <Link to = '/' className='nav__brand'> LUNCHUP</Link>
         <ul className={navActive}>
             <li className='nav__item'>
-                <Link className='nav__link' to = '/'>Home</Link>
+                <Link className='nav__link' to = '/'>Shop</Link>
             </li>
             <li className='nav__item'>
                 <Link className='nav__link' to = '/about'>About</Link>
             </li>
-            {!isLoggedIn && <li className='nav__item'>
+            {isLoggedIn && <li className='nav__item'>
                 <Link className='nav__link' to = '/profile'>Profile</Link>
             </li>}
-            {isLoggedIn && 
+            {!isLoggedIn && 
                 <li className='nav__item'>
                 <Link className='nav__link' to = '/signin'>Sign In</Link>
             </li>}
             
-            {!isLoggedIn ? 
+            {isLoggedIn ? 
                 <li className='nav__item'>
-                    <Button text = 'Log out' />
+                    <button className='button' onClick={logoutHandler}>Log Out</button>
                     </li> 
                 : 
                 <li onClick ={NavigateToSignUp} className='nav__item'>

@@ -1,5 +1,5 @@
 import React , {useRef, useState} from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../assets/favicon.png'
 import ImageBanner from '../../components/ImageBanner/ImageBanner';
 
@@ -13,7 +13,7 @@ const SignUp = () => {
   // add Loading when creating a request
   const [isLoading, setIsLoading] = useState(false)
 
-  
+  const Navigate = useNavigate()
 
   // Get user inputs on signup
   const emailInputRef = useRef()
@@ -47,6 +47,7 @@ const SignUp = () => {
       setIsLoading(false)
       if (res.ok){
         console.log('Account Created')
+        Navigate('/signin')
       }
       else{
         return res.json().then(data => {
