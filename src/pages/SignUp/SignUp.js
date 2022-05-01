@@ -10,6 +10,8 @@ const SignUp = () => {
 
   const API_KEY = 'AIzaSyB2h3x72iA_O6-0Rx_mqXOdqhj1MvZWOKY';
 
+  
+
   // add Loading when creating a request
   const [isLoading, setIsLoading] = useState(false)
 
@@ -30,7 +32,11 @@ const SignUp = () => {
     const enteredPhone = phoneNumberInputRef.current.value;
     const enteredPassword = passwordInputRef.current.value
 
-
+    const user = {
+      username: enteredUsername,
+      email: enteredEmail,
+      phoneNumber: enteredPhone
+    }
 
     setIsLoading(true)
     fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${API_KEY}`, {
@@ -46,6 +52,17 @@ const SignUp = () => {
     }).then(res => {
       setIsLoading(false)
       if (res.ok){
+        // Sending the user datails to firebase
+
+        fetch('https://lunchup-5eb1f-default-rtdb.firebaseio.com/users.json', {
+          method : 'POST',
+          body: JSON.stringify(user),
+          headers: {
+            'Content-Type' : 'application/json'
+          }
+        }).then(res => res.json()).then(data => console.log(data))
+
+
         console.log('Account Created')
         Navigate('/signin')
       }
