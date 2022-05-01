@@ -19,8 +19,8 @@ function App() {
     
       <Routes>
         <Route path = '/' element = {<Welcome />} />
-        <Route path = '/signup' element = {<SignUp />} />
-        <Route path = '/signin' element = {<SignIn />} />
+        <Route path = '/signup' element = { !authCtx.isLoggedIn ? <SignUp /> : <Welcome />} />
+        <Route path = '/signin' element = { !authCtx.isLoggedIn ? <SignIn /> : <Welcome />} />
         <Route path = '/about' element = {<About />} />
         <Route path = '/profile' element = { authCtx.isLoggedIn ? <Profile /> : <Welcome />} />
         <Route path = '*' element = {<NotFound />} />
