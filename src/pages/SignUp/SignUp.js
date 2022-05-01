@@ -2,6 +2,7 @@ import React , {useRef, useState} from 'react'
 import { Link } from 'react-router-dom';
 import logo from '../../assets/favicon.png'
 import ImageBanner from '../../components/ImageBanner/ImageBanner';
+
 import './SignUp.css';
 
 
@@ -11,6 +12,8 @@ const SignUp = () => {
 
   // add Loading when creating a request
   const [isLoading, setIsLoading] = useState(false)
+
+  
 
   // Get user inputs on signup
   const emailInputRef = useRef()

@@ -1,8 +1,9 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useContext} from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../assets/favicon.png'
 import '../SignUp/SignUp.css';
 import ImageBanner from '../../components/ImageBanner/ImageBanner';
+import AuthContext from '../../store/auth-context';
 
 const SignIn = () => {
 
@@ -10,6 +11,8 @@ const SignIn = () => {
 
   // add Loading when creating a request
   const [isLoading, setIsLoading] = useState(false)
+
+  const authCtx = useContext(AuthContext)
 
   // Get user inputs on signup
   const emailInputRef = useRef()
@@ -55,7 +58,9 @@ const SignIn = () => {
           throw new Error(errorMessage);
         });
       }
-    }).then(data => console.log(data))
+    }).then(data => {
+      authCtx.login(data.idToken)
+    })
     .catch(err => alert(err.message))
 
   }
