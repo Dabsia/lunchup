@@ -8,7 +8,6 @@ import Button from '../Button/Button'
 const Navigation = () => {
 
     const authCtx = useContext(AuthContext)
-    console.log(authCtx)
 
     const Navigate = useNavigate()
 

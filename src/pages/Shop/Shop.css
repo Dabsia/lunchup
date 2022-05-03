@@ -1,0 +1,39 @@
+.shop_page{
+    padding: 2rem;
+    position: relative;
+}
+
+.shop_page--details{
+    margin-top: 1rem;
+    
+}
+
+.shop_page__header{
+    color: var(--main-color);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 57px;
+}
+
+.search_box{
+    width: 40%;
+    border: 1px solid var(--main-color);
+    
+    outline: var(--main-color);
+    margin: 2rem auto;
+    
+}
+
+.search::placeholder{
+    font-style: normal;
+    font-weight: 500;
+    font-size: .9rem;
+
+}
+.small_Image{
+    height: 6rem;
+    width: 3rem;
+    position: absolute;
+    left: 0;
+}

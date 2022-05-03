@@ -57,6 +57,7 @@ li{
         flex-direction: column;
         transform: translateX(100%);
         transition: .3s ease-in;
+        z-index: 8;
     }
     .nav__link{
         color: #fff;
