@@ -5,6 +5,7 @@ import SignUp from './pages/SignUp/SignUp';
 import SignIn from './pages/SignIn/SignIn';
 import Welcome from './pages/Welcome/Welcome';
 import About from './pages/About/About';
+import Shop from './pages/Shop/Shop'
 import NotFound from './pages/NotFound/NotFound'
 import Profile from './pages/Profile/Profile';
 
@@ -22,6 +23,7 @@ function App() {
         <Route path = '/signup' element = { !authCtx.isLoggedIn ? <SignUp /> : <Welcome />} />
         <Route path = '/signin' element = { !authCtx.isLoggedIn ? <SignIn /> : <Welcome />} />
         <Route path = '/about' element = {<About />} />
+        <Route path = '/shop' element = { !authCtx.isLoggedIn ? <SignIn /> : <Shop />} />
         <Route path = '/profile' element = { authCtx.isLoggedIn ? <Profile /> : <Welcome />} />
         <Route path = '*' element = {<NotFound />} />
       </Routes>

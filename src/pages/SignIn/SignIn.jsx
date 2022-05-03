@@ -62,7 +62,7 @@ const SignIn = () => {
     }).then(data => {
       const expirationTime = new Date(new Date().getTime() + (+data.expiresIn * 1000))
       authCtx.login(data.idToken, expirationTime.toISOString())
-      Navigate('/')
+      Navigate('/shop')
 
     })
     .catch(err => alert(err.message))
