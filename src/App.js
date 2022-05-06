@@ -10,6 +10,7 @@ import NotFound from './pages/NotFound/NotFound'
 import Profile from './pages/Profile/Profile';
 
 import AuthContext from './store/auth-context';
+import ShopVendor from './components/ShopVendor/ShopVendor';
 
 function App() {
 
@@ -23,6 +24,7 @@ function App() {
         <Route path = '/signup' element = { !authCtx.isLoggedIn ? <SignUp /> : <Welcome />} />
         <Route path = '/signin' element = { !authCtx.isLoggedIn ? <SignIn /> : <Welcome />} />
         <Route path = '/about' element = {<About />} />
+        <Route path = '/vendor' element = {<ShopVendor />} />
         <Route path = '/shop' element = { !authCtx.isLoggedIn ? <SignIn /> : <Shop />} />
         <Route path = '/profile' element = { authCtx.isLoggedIn ? <Profile /> : <Welcome />} />
         <Route path = '*' element = {<NotFound />} />
