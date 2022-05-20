@@ -1,5 +1,5 @@
 import React from 'react' 
-import AppDesc from '../../components/AppDesc/AppDesc'
+// import AppDesc from '../../components/AppDesc/AppDesc'
 import Navigation from '../../components/Navigation/Navigation'
 
 const Welcome = () => {
@@ -8,7 +8,7 @@ const Welcome = () => {
       <div>
       <Navigation />
           <h1>Welcome</h1>
-          <AppDesc />
+  {/*<AppDesc />*/}
       </div>
       
     

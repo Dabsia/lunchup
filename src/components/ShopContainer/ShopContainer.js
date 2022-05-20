@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import { vendors } from '../../pages/Shop/Vendors'
+import { shopVendorsList } from '../../pages/Shop/Vendors'
 import ShopVendor from '../ShopVendor/ShopVendor'
 import './ShopContainer.css'
 
@@ -8,7 +8,7 @@ const ShopContainer = ({vendorsInput}) => {
     const [shopVendor, setShopVendor] = useState([])
 
     useEffect(() => {
-        setShopVendor(vendors)
+        setShopVendor(shopVendorsList)
     }, [])
 
     
@@ -21,7 +21,7 @@ const ShopContainer = ({vendorsInput}) => {
         {
             filteredShopVendors.map(vendor => {
                 return (
-                    <ShopVendor key = {vendor.id} name = {vendor.name} location = {vendor.location} logo = {vendor.logo} />
+                    <ShopVendor key = {vendor.id} id = {vendor.id} name = {vendor.name} path = {vendor.path} location = {vendor.location} logo = {vendor.logo} />
                 )
             })
         }
@@ -32,7 +32,3 @@ const ShopContainer = ({vendorsInput}) => {
 export default ShopContainer
 
 
-/* 
-const filteredMonsters = monsters.filter(monster => (
-    monster.name.toLowerCase().includes(searchfield.toLowerCase())))
-*/

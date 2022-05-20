@@ -26,12 +26,8 @@ const Shop = () => {
           <div className='search_box'>
           <input onChange={searchVendors} type = 'text' className='form_input search' placeholder='Search for your favourite food station' />
           </div>
-          <ShopContainer vendorsInput = {vendors}/>
         </form>
-
-      
-
-
+        <ShopContainer vendorsInput = {vendors}/>
       </div>
     </div>
   )
