@@ -1,0 +1,41 @@
+.heroSection{
+    width: 100vw;
+    height: 85vh;
+    position: relative
+}
+
+.heroSectionHeader{
+    text-align: center;
+    color: var(--main-color);
+    margin: auto;
+    margin-top: 2rem;
+    width: 35%;
+
+}
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.orderNowBtn{
+    height: 40px;
+    width: 15%;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 1.1rem;
+    border-radius: .6rem;
+    outline: none;
+    border: none;
+    
+}
+.chips_image{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.small_burger{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}

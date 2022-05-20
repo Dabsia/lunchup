@@ -40,6 +40,9 @@ const Navigation = () => {
         <ul className={navActive}>
             <li className='nav__item'>
                 <Link className='nav__link' to = '/shop'>Shop</Link>
+              </li>
+              <li className='nav__item'>
+                <Link className='nav__link' to = '/shop'>Tray</Link>
             </li>
             <li className='nav__item'>
                 <Link className='nav__link' to = '/about'>About</Link>
