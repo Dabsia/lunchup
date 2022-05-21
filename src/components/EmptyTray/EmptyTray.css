@@ -1,0 +1,38 @@
+.emptyTray{
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.emptyBox{
+    margin: 0 auto;
+    width: 40%;
+    
+}
+.no-food{
+    width: 100%;
+}
+
+.emptyText{
+    color: rgba(0, 0, 0, 0.48);
+    text-align: center;
+    margin-top: .7rem;
+}
+.createTrayBtn{
+    margin-top: 3rem;
+    width: 20%;
+    height: 40px;
+    border: 1px solid var(--main-color);
+    outline: none;
+    background-color: #fff;
+    border-radius: .6rem;
+    color: var(--main-color);
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+.createTrayBtn:hover{
+    color: #fff;
+    background-color: var(--main-color);;
+}

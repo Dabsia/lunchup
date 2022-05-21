@@ -42,7 +42,7 @@ const Navigation = () => {
                 <Link className='nav__link' to = '/shop'>Shop</Link>
               </li>
               <li className='nav__item'>
-                <Link className='nav__link' to = '/shop'>Tray</Link>
+                <Link className='nav__link' to = '/tray'>Tray</Link>
             </li>
             <li className='nav__item'>
                 <Link className='nav__link' to = '/about'>About</Link>
