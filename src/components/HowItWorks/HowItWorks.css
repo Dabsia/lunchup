@@ -1,0 +1,29 @@
+.howItWorks{
+    height: 80vh;
+    width: 100%;
+}
+.vendors__desc{
+    text-align: center;
+    color: var(--main-color);
+    width: 30%;
+    margin: auto;
+    font-size: 1.5rem;
+}
+.vendors{
+    width: 100vw;
+}
+.small__Image{
+    height: 6rem;
+        width: 3rem;
+        position: absolute;
+        left: 0;
+}
+
+.divine{
+    height: 45vh;
+    width: 45vw;
+    background-color: red;
+    margin: auto;
+    box-sizing: border-box;
+    border: 7px dashed green;
+}
