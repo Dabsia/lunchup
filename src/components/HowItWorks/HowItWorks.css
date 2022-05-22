@@ -19,11 +19,13 @@
         left: 0;
 }
 
-.divine{
-    height: 45vh;
-    width: 45vw;
-    background-color: red;
+.vendors__desc--image{
+    display: flex;
+    width: 90%;
     margin: auto;
-    box-sizing: border-box;
-    border: 7px dashed green;
+    margin-top: 2rem;
+    justify-content: space-between;
+}
+.orderFoodText{
+    text-align: center;
 }

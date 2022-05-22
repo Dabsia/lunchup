@@ -10,7 +10,6 @@ const AppDesc = () => {
         <div className='app__desc__text'>
             <h2 className='order'>Order right from your phone</h2>
             <p className='lunchupFood'>LunchUp Food app makes it simple for anybody to use a mobile device to look over the menu of the best vendors and place an order for home delivery.</p>
-
             <div className='appstores'>
                 <div className='appstoreHolder'>
                     <img src={AppStore} alt  = 'appStore' className= 'appStoreImage' />

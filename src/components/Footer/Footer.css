@@ -1,0 +1,30 @@
+.footer{
+    padding-left: 4.2rem;
+    height: 50vh;
+    width: 100%;
+}
+.footer__contents{
+    padding-top: 3rem;
+    width: 70%;
+}
+.footer__header{
+    color: var(--main-color);
+}
+.footer__text{
+    color: #636161;
+    margin-top: .7rem;
+    width: 80%;
+}
+.footer__links{
+    margin-top: 1.3rem;
+    display: flex;
+    justify-content: space-between;
+}
+.footer__link-desc{
+    font-size: 1rem;
+}
+.footer__link{
+    text-decoration: none;
+    color: #636161;
+    font-size: .9rem;
+}

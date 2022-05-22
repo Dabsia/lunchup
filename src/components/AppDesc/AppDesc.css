@@ -10,7 +10,7 @@
     
 }
 .app__desc__text{
-    width: 25rem;
+    width: 50%;
 }
 .order{
     color: #fff;
@@ -19,7 +19,8 @@
 }
 .lunchupFood{
     color: #fff;
-    margin-bottom: 3.2rem;
+    margin-bottom: .7rem;
+    
 }
 
 .appstores{
@@ -37,8 +38,7 @@
     object-fit: cover;
 }
 .app__desc__imageHolder{
-    height: 20rem;
-    
+    height: 15.8rem;
     
 }
 .phones{
