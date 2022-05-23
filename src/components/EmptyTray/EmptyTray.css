@@ -34,5 +34,42 @@
 }
 .createTrayBtn:hover{
     color: #fff;
-    background-color: var(--main-color);;
+    background-color: var(--main-color);
+}
+
+@media screen and (max-width: 944px) {
+    .emptyBox {
+        width: 60%;
+    
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .createTrayBtn {
+        margin-top: 3rem;
+        width: 20%;
+        height: 40px;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .createTrayBtn {
+        margin-top: 3rem;
+        width: 60%;
+        height: 40px;
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .emptyBox {
+        width: 80%;
+    }
+    .createTrayBtn {
+        margin-top: 3rem;
+        width: 80%;
+        height: 40px;
+        font-size: .8rem;
+    }
 }
