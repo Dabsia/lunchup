@@ -6,7 +6,7 @@ import rectPhone from '../../assets/Group 217.png'
 const HowItWorks = () => {
   return (
       <div className='howItWorks'>
-          <div className='vendors'>
+          <div className='vendors__box'>
             <h3 className='vendors__desc'>Order from the best food stations around you</h3>
           </div>
           <div className='partners'>

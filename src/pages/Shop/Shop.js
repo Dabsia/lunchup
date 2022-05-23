@@ -25,8 +25,8 @@ const Shop = () => {
           <img className = 'small_Image' src = {small_Image} alt = 'smallImage' />
         </div>
         <form>
-          <div className='search_box'>
-          <input onChange={searchVendors} type = 'text' className='form_input search' placeholder='Search for your favourite food station' />
+          <div className='search_box search'>
+          <input onChange={searchVendors} type = 'text' className='form_input' placeholder='Search for your favourite food station' />
           </div>
         </form>
         <ShopContainer vendorsInput = {vendors}/>

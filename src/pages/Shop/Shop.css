@@ -36,3 +36,10 @@
     position: absolute;
     left: 0;
 }
+
+
+@media screen and (max-width: 755px) {
+    .search{
+        width: 90%;
+    }
+}

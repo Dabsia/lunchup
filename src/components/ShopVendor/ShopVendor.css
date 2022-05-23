@@ -1,7 +1,8 @@
 .vendor{
-    width: 26%;
+    width: 88%;
     height: 55vh;
     cursor: pointer;
+    margin: auto;
 }
 .vendor:hover{
     transform: scale(1.1);
@@ -31,4 +32,16 @@
 
 .vendor__location{
     color: var(--main-color);
+}
+
+@media screen and (max-width: 1000px) {
+    .vendor{
+        width: 100%;
+    }
+    .vendor__name {
+        font-size: 1rem;
+    }
+    .vendor__location {
+        font-size: 1rem;
+    }
 }
