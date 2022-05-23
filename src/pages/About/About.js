@@ -11,7 +11,7 @@ const About = () => {
     <Navigation />
     <div className='aboutUs'>
         <div className='aboutUs__text'>
-        <div>
+        <div className='about'>
         
         <div className='aboutUs--story'>
             <h2 className='aboutUs--story__heading'>Our Story</h2>

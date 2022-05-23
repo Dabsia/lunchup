@@ -1,7 +1,7 @@
 .aboutUs{
     display: flex;
     justify-content: space-around;
-    padding: 4rem;
+    padding: 2rem;
 }
 .aboutUs__text{
     width: 50%;
@@ -35,4 +35,39 @@
 .abtUsImage{
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 855px) {
+    .aboutUs {
+        padding: 2rem;
+        flex-direction: column;
+    }
+    .aboutUs__text {
+        width: 100%;
+        order: 2;    
+    }
+        .aboutUs__image {
+            width: 100%;
+    }
+    .aboutUs--story,.aboutUs--vision {
+        margin: auto;
+        width: 100%;
+        
+    }
+    .aboutUs--vision{
+        margin-top: 1rem;
+    }
+    .about{
+        width: 100%;
+    }
+    .aboutUs--story__text,
+    .aboutUs--vision__text {
+        width: 100%;
+        font-size: 1rem;
+    }
+        .aboutUs--story__heading,
+        .aboutUs--vision__heading {
+            font-size: 1.6rem;
+    
+        }
 }
