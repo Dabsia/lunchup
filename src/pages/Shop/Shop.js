@@ -3,6 +3,8 @@ import './Shop.css'
 import small_Image from '../../assets/smallImage.png'
 import Navigation from '../../components/Navigation/Navigation'
 import ShopContainer from '../../components/ShopContainer/ShopContainer'
+import AppDesc from '../../components/AppDesc/AppDesc'
+import Footer from '../../components/Footer/Footer'
 const Shop = () => {
 
   const [vendors, setVendors] = useState('')
@@ -29,6 +31,8 @@ const Shop = () => {
         </form>
         <ShopContainer vendorsInput = {vendors}/>
       </div>
+      <AppDesc />
+      <Footer />
     </div>
   )
 }

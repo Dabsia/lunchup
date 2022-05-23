@@ -3,6 +3,7 @@ import './About.css'
 import AboutUsPic from '../../assets/AboutUs.jpg'
 import AppDesc from '../../components/AppDesc/AppDesc'
 import Navigation from '../../components/Navigation/Navigation'
+import Footer from '../../components/Footer/Footer'
 
 const About = () => {
   return (
@@ -27,7 +28,8 @@ const About = () => {
                 <img className='abtUsImage' src = {AboutUsPic} alt = 'About Us' />
         </div>
         </div>
-        <AppDesc />
+      <AppDesc />
+      <Footer />
     </div>
   )
 }
