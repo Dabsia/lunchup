@@ -74,10 +74,12 @@ const SignIn = () => {
     <div className='sign'>
         <ImageBanner />
         <div className='auth'>
-      <div className='auth__box'>
-        <div className='logoContainer'>
-          <img src = {logo} alt = 'logo' />
-        </div>
+        <div className='auth__box'>
+          <Link to = '/'>
+            <div className='logoContainer'>
+              <img src = {logo} alt = 'logo' />
+            </div>
+          </Link>
         <h1 className='auth__text'>Login to Your Account</h1>
         <form onSubmit={submitHandler}>
           

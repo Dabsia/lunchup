@@ -20,7 +20,6 @@
 .lunchupFood{
     color: #fff;
     margin-bottom: .7rem;
-    
 }
 
 .appstores{
@@ -43,4 +42,43 @@
 }
 .phones{
     height: 100%;
+}
+
+@media screen and (max-width: 730px) {
+    .app__desc__imageHolder{
+        display: none;
+    }
+    .app__desc{
+        display: block;
+    }
+    .app__desc__text {
+        width: 100%;
+    }
+    .order{
+        width: 100%;
+    }
+    .appstoreHolder {
+        width: 10rem;
+        height: 2.8rem;
+    }
+}
+@media screen and (max-width: 430px){
+    .app__desc {
+        height: 20rem;
+        padding-left: 1.8rem;
+        padding-top: 3rem;
+        padding-right:1.8rem;
+        margin: auto;
+    }
+    .lunchupFood {
+        font-size: .8rem;
+    }
+    .appstoreHolder {
+        width: 48%;
+        height: 2.8rem;
+    }
+    .appstores {
+        width: 100%;
+
+    }
 }

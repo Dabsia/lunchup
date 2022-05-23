@@ -22,9 +22,35 @@
 }
 .footer__link-desc{
     font-size: 1rem;
+    margin-bottom: .6rem;
 }
 .footer__link{
     text-decoration: none;
     color: #636161;
     font-size: .9rem;
+}
+.footer__link-li{
+    margin-bottom: .6rem;
+}
+
+@media screen and (max-width: 730px) {
+    .footer {
+        padding-left:2rem;
+        padding-right: 2rem;
+        margin: auto;
+    }
+    .footer__contents {
+        width: 100%;
+    }
+    .footer__text {    
+        width: 100%;
+        font-size: .9rem;
+    }
+    .footer__link-desc {
+        font-size: .9rem;
+    }
+    .footer__link {
+        font-size: .8rem;
+        margin-bottom: .5rem;
+    }
 }

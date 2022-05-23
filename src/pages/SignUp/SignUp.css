@@ -65,3 +65,27 @@ label{
     text-decoration: none;
     color: var(--main-color);
 }
+
+
+@media screen and (max-width: 800px) {
+    .auth {
+        padding: 0;
+    }
+    .auth__box {
+        width: 85%;
+    }
+    label{
+        font-size: .9rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .auth {
+        padding: 0;
+        width: 100%;
+    }
+
+    .auth__box {
+        width: 85%;
+    }
+}

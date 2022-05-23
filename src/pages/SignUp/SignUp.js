@@ -84,10 +84,12 @@ const SignUp = () => {
     <div className='sign'>
       <ImageBanner />
       <div className='auth'>
-      <div className='auth__box'>
-        <div className='logoContainer'>
-          <img src = {logo} alt = 'logo' />
-        </div>
+        <div className='auth__box'>
+          <Link to = '/'>
+            <div className='logoContainer'>
+              <img src = {logo} alt = 'logo' />
+            </div>
+          </Link>
         <h1 className='auth__text'>Create an Account</h1>
         <form onSubmit={submitHandler}>
           <div className='form_detail'>

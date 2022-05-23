@@ -12,22 +12,22 @@ const Footer = () => {
               <div className='footer__links'>
                   <ul>
                       <h6 className='footer__link-desc'>Company</h6>
-                      <Link className='footer__link' to = '/'><li>About Us</li></Link>  
-                      <Link className='footer__link' to = '/'><li>Contact</li></Link>
-                      <Link className='footer__link' to = '/'><li>Brand Assets</li></Link>
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>About Us</li></Link>  
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>Contact</li></Link>
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>Brand Assets</li></Link>
                   </ul>
               
               <ul>
                       <h6 className='footer__link-desc'>Services</h6>
-                      <Link className='footer__link' to = '/'><li>Restaurants</li></Link>  
-                      <Link className='footer__link' to = '/'><li>Delivery</li></Link>
-                      <Link className='footer__link' to = '/'><li>Payments</li></Link>
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>Restaurants</li></Link>  
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>Delivery</li></Link>
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>Payments</li></Link>
               </ul>
                     <ul>
                       <h6 className='footer__link-desc'>Socials</h6>
-                      <Link className='footer__link' to = '/'><li>Facebook</li></Link>  
-                      <Link className='footer__link' to = '/'><li>Instagram</li></Link>
-                      <Link className='footer__link' to = '/'><li>Twitter</li></Link>
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>Facebook</li></Link>  
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>Instagram</li></Link>
+                      <Link className='footer__link' to = '/'><li className='footer__link-li'>Twitter</li></Link>
                   </ul>
                   </div>
           </div>
