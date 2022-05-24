@@ -4,8 +4,6 @@ import logo from '../../assets/favicon.png'
 import '../SignUp/SignUp.css';
 import ImageBanner from '../../components/ImageBanner/ImageBanner';
 import AuthContext from '../../store/auth-context';
-import loaderGif from '../../assets/loaderGif.png'
-
 
 const SignIn = () => {
 
@@ -94,8 +92,7 @@ const SignIn = () => {
             <input type = 'password' ref = {passwordInputRef} id = 'password' className='form_input' placeholder='password' />
           </div>
           <div className='btn'>
-
-              <button type='submit' className='form_button'>{!isLoading ? 'Log In' : <img className='loader' src={loaderGif} alt = 'loaderGif'/>}</button>
+            <button type='submit' className='form_button'>{!isLoading ? 'Log In': 'Loading...'}</button>
           </div>
         </form>
         <p className='haveAcctAlready'>Don't have an account? <Link className='logIn' to  = '/signup'>Sign Up</Link></p>
