@@ -16,15 +16,15 @@ const HowItWorks = () => {
               <h3 className='vendors__desc'>How it works</h3>
         <div className='vendors__desc--image'>
           <div>
-            <img src={rect} alt='rect' /> 
+            <img src={rect}  className = 'howItWorksImages' alt='rect' /> 
             <p className='orderFoodText'>Choose a food vendor</p>
           </div>
           <div>
-            <img src={rectPhone} alt='rectPhone' /> 
+            <img src={rectPhone} className = 'howItWorksImages'  alt='rectPhone' /> 
             <p className='orderFoodText'>Place an Order</p>
           </div>
           <div>
-            <img src={rect2} alt='rect2' /> 
+            <img src={rect2} className = 'howItWorksImages'  alt='rect2' /> 
             <p className='orderFoodText'>Food is delivered to You</p>
           </div>
         </div>

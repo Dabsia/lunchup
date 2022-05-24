@@ -1,11 +1,12 @@
 .howItWorks{
     height: 80vh;
     width: 100%;
+    margin-top: 2rem;
 }
 .vendors__desc{
     text-align: center;
     color: var(--main-color);
-    width: 30%;
+    width: 35%;
     margin: auto;
     font-size: 1.5rem;
 }
@@ -28,4 +29,43 @@
 }
 .orderFoodText{
     text-align: center;
+}
+@media screen and (max-width: 900px) {
+    .vendors__desc {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 730px) {
+    .vendors__desc {
+        width: 60%;
+    }
+    .vendors__desc--image {
+        display: flex;
+        width: 90%;
+        margin: auto;
+        height: 100vh;
+        background-color: green;
+        flex-direction: column;
+    }
+    .howItWorksImages{
+        margin: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .vendors__desc {
+        width: 80%;
+        font-size: 1.3rem;
+    }
+    .howItWorks {
+        margin-top: .6rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .vendors__desc {
+        width: 90%;
+    }
 }
