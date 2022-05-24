@@ -1,5 +1,5 @@
 .howItWorks{
-    height: 80vh;
+    height: 70vh;
     width: 100%;
     margin-top: 2rem;
 }
@@ -30,28 +30,42 @@
 .orderFoodText{
     text-align: center;
 }
-@media screen and (max-width: 900px) {
-    .vendors__desc {
+
+
+@media screen and (max-width: 955px) {
+    .howItWorksImages{
         width: 50%;
+        margin: auto;
+        display: block;
     }
+}
+
+@media screen and (max-width: 900px) {
+    .howItWorksImages {
+            margin: auto;
+            display: block;
+            
+        }
+                .vendors__desc {
+                    width: 80%;
+                    margin-bottom: 1rem;
+                }
 }
 
 @media screen and (max-width: 730px) {
     .vendors__desc {
         width: 60%;
+        margin-bottom: 1rem;
     }
     .vendors__desc--image {
         display: flex;
         width: 90%;
         margin: auto;
-        height: 100vh;
-        background-color: green;
-        flex-direction: column;
+        height: 60vh;
     }
-    .howItWorksImages{
-        margin: auto;
-        display: block;
-    }
+        .howItWorks {
+            height: 50vh;
+        }
 }
 
 @media screen and (max-width: 600px) {
@@ -62,10 +76,69 @@
     .howItWorks {
         margin-top: .6rem;
     }
+    .orderFoodText{
+        font-size: .8rem;
+        margin-top: .7rem;
+    }
+    .howItWorksContainer{
+        height: 50vh;
+    }
+    .howItWorksImagesHolder {
+        height: 50%;
+    }
+    .vendors__desc--image {
+        margin-bottom: 0;            
+    }
 }
 
+@media screen and (max-width: 500px) {
+    .howItWorks{
+        margin-bottom: 0;
+    }
+    .vendors__desc--image {
+        margin: auto;        
+        height: 50vh;
+    }
+    .howItWorksImagesHolder{
+        
+        margin-bottom: .7rem;
+        height: 40%;
+    }
+    .howItWorksImages {
+        margin: auto;
+        display: block;
+        height: 75%;
+        
+    }
+        .howItWorksContainer {
+            height: 50vh;
+            
+        }
+}
+@media screen and (max-width: 470px) {
+    .vendors__desc--image {
+        justify-content: space-between;
+        height: fit-content;
+    }
+    .orderFoodText {
+        font-size: .7rem;
+    }
+        .howItWorksContainer {
+            height: fit-content;
+    
+        }
+    .howItWorksImages{
+        width: 70%;
+    }
+}
 @media screen and (max-width: 400px) {
     .vendors__desc {
         width: 90%;
+    }
+    .orderFoodText{
+        font-size: .6rem;
+    }
+    .howItWorks{
+        height: 27vh;
     }
 }

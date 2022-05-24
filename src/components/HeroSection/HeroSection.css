@@ -90,9 +90,12 @@
     .small_burger {
         display: none;
     }
-        .heroSection {
-            height: 35vh;
-        }
+    .heroSection {
+        height: 35vh;
+    }
+    .heroSection {
+        height: 26vh;
+    }
 }
 
 @media screen and (max-width: 650px) {
@@ -111,5 +114,8 @@
         .orderNowBtn {
             width: 40%;
             font-size: 1rem;
+        }
+        .heroSection{
+            height: 30vh;
         }
 }
