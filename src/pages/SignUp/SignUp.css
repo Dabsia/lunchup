@@ -61,6 +61,10 @@ label{
     margin-top: 1rem;
     font-weight: 500;
 }
+.loader{
+    height: 2rem;
+    width: 3rem;
+}
 .logIn{
     text-decoration: none;
     color: var(--main-color);
