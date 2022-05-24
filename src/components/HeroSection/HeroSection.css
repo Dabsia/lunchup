@@ -41,3 +41,75 @@
     bottom: 0;
     height: 15rem;
 }
+
+@media screen and (max-width: 900px){
+    .small_burger {
+        height: 15rem;
+    }
+    
+    .chips_image {
+        height: 15rem;
+    }
+}
+
+@media screen and (max-width: 865px) {
+    .small_burger {
+        height: 12rem;
+    }
+
+    .chips_image {
+        height: 12rem;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .heroSectionHeader {
+        width: 70%;
+        font-size: 1.8rem;
+    }
+    .heroSection {
+        height: 70vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .heroSectionHeader {
+        width: 70%;
+        font-size: 1.5rem;
+    }
+    .orderNowBtn {
+        height: 40px;
+        width: 30%;
+        font-size: 1.1rem;
+    }
+    .chips_image {
+        display: none;
+    }
+    
+    .small_burger {
+        display: none;
+    }
+        .heroSection {
+            height: 35vh;
+        }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .heroSection {
+        height: 40vh;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+    .heroSectionHeader {
+        width: 90%;
+        font-size: 1.5rem;
+    }
+        .orderNowBtn {
+            width: 40%;
+            font-size: 1rem;
+        }
+}

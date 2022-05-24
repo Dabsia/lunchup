@@ -47,9 +47,6 @@ const Navigation = () => {
             <li className='nav__item'>
                 <Link className='nav__link' to = '/about'>About</Link>
             </li>
-            {isLoggedIn && <li className='nav__item'>
-                <Link className='nav__link' to = '/profile'>Profile</Link>
-            </li>}
             {!isLoggedIn && 
                 <li className='nav__item'>
                 <Link className='nav__link' to = '/signin'>Sign In</Link>
