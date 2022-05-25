@@ -1,0 +1,15 @@
+.foodsContainer {
+    display: grid;
+    margin-top: 5rem;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+}
+
+@media screen and (max-width: 900px) {
+    .foodsContainer {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(auto-fill, minmax(46%, 1fr));
+        padding: 0;
+    }
+
+}

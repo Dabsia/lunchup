@@ -9,6 +9,7 @@ import Shop from './pages/Shop/Shop'
 import NotFound from './pages/NotFound/NotFound'
 import VendorFoods from './components/VendorFoods/VendorFoods';
 import AuthContext from './store/auth-context';
+
 import Tray from './pages/Tray/Tray';
 
 function App() {
@@ -24,7 +25,7 @@ function App() {
         <Route path = '/signin' element = { !authCtx.isLoggedIn ? <SignIn /> : <Welcome />} />
         <Route path='/about' element={<About />} />
         <Route path = '/tray' element = {<Tray />} />
-        <Route path = '/shop/:vendorId' element = {<VendorFoods />} />
+        <Route path = '/shop/:vendorId' element = { !authCtx.isLoggedIn ? <SignIn /> : <VendorFoods />} />
         <Route path = '/shop' element = { !authCtx.isLoggedIn ? <SignIn /> : <Shop />} />
         <Route path = '*' element = {<NotFound />} />
       </Routes>

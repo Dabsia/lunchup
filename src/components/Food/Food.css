@@ -1,0 +1,43 @@
+.foodContainer{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 3rem;
+}
+.foodDetails{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    width: 100%;
+}
+.foodImageContainer{
+    width: 100%;
+}
+.foodImage{
+    width: 100%;
+}
+.foodName{
+    color: var(--main-color)
+}
+.AddToCartBtn{
+    width: 100%;
+    height: 40px;
+    border-radius: .6rem;
+    border: 2px solid var(--main-color);
+    outline: none;
+    color: var(--main-color);
+    background-color: #fff;
+    margin-top: .6rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.AddToCartBtn:hover{
+    background-color: var(--main-color);
+    color: #fff;
+}
+@media screen and (max-width: 463px) {
+    .foodContainer {
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+}

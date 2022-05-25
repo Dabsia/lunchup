@@ -1,0 +1,40 @@
+.pageLayout{
+    padding: 2rem;
+    margin-top: 4rem;
+}
+.foodHeaderSection{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.vendorName{
+    color: var(--main-color);
+    font-size: 1.7rem;
+}
+.openingTime{
+    color: var(--main-color);
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 650px) {
+    .pageLayout{
+        margin-top: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .foodHeaderSection {
+        flex-direction: column;
+    }
+    .foodDeliveryTime{
+        margin-top: 1rem;
+    }
+    .vendorName {
+        font-size: 1.5rem;
+    }
+
+    .openingTime {
+        font-size: .9rem;
+    }
+}
