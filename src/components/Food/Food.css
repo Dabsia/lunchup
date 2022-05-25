@@ -15,7 +15,7 @@
 .foodImage{
     width: 100%;
 }
-.foodName{
+.foodName, .foodPrice{
     color: var(--main-color)
 }
 .AddToCartBtn{

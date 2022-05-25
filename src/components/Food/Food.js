@@ -10,7 +10,7 @@ const Food = ({name, imageUrl, price}) => {
                 </div>
                 <div className='foodDetails'>
                     <h3 className='foodName'>{name}</h3>
-                    <p className='foodPrice'>${price}</p>
+                    <p className='foodPrice'>₦{price}</p>
                 </div>
                 <button className='AddToCartBtn'>Add to Tray</button>
             </div>

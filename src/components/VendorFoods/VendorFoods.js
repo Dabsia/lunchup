@@ -24,8 +24,8 @@ const VendorFoods = () => {
             <p className='deliveryTime'><span className='openingTime'>Open</span> 8:00 am - 10:00 pm</p>
              
           </div>
+          </div>
           <Foods />
-        </div>
       </div>
       <AppDesc />
       <Footer />
