@@ -1,0 +1,49 @@
+.trayFoodHolder{
+    display: flex;
+    /* justify-content: space-between; */
+    
+}
+
+
+.trayFoodDetails{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.trayFoodItems{
+    margin-left: 2rem;
+}
+.trayFoodprice{
+    color: var(--main-color);
+}
+.trayFoodName{
+    margin-bottom: 1rem;
+}
+
+.cartOptionsBtnContainer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.trayFoodImage{
+    height: 6rem;
+    width: 6rem;
+}
+.cartOption{
+    background-color: var(--main-color);
+    outline: none;
+    border: none;
+    color: #fff;
+    width: 1.6rem;
+    height: 1.6rem;
+    font-size: 1.5rem;
+    border-radius: .3rem;
+}
+.trash{
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
+.trayFoodButtons{
+    display: flex;
+    justify-content: space-between;
+}

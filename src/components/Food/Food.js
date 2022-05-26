@@ -1,7 +1,13 @@
 import React from 'react'
 import './Food.css'
+import { connect } from 'react-redux'
+import { addItem } from '../../redux/reducers/cart.action'
 
-const Food = ({name, imageUrl, price}) => {
+const Food = ({food, addItem}) => {
+    const { name, imageUrl, price } = food
+
+
+
     return (
         
             <div className='foodContainer'>
@@ -12,10 +18,14 @@ const Food = ({name, imageUrl, price}) => {
                     <h3 className='foodName'>{name}</h3>
                     <p className='foodPrice'>₦{price}</p>
                 </div>
-                <button className='AddToCartBtn'>Add to Tray</button>
+                <button onClick={() => addItem  } className='AddToCartBtn'>Add to Tray</button>
             </div>
           
   )
 }
 
-export default Food
+const mapDispatchToProps = dispatch => ({
+  addItem: food => dispatch(addItem(food))
+})
+
+export default connect(null, mapDispatchToProps)(Food)

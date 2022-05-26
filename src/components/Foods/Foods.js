@@ -17,8 +17,8 @@ const Foods = () => {
         {
             foodList.map(food => {
                 return (
-                    <Food key = {food.id}  name = {food.name} price = {food.price} imageUrl = {food.imageUrl}/>
-                )
+                    <Food key={food.id} food={food } />
+                )  
             })
         }
     </div>

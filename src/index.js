@@ -8,14 +8,15 @@ import {BrowserRouter} from 'react-router-dom'
 import {AuthContextProvider} from './store/auth-context'
 
 
+
 ReactDOM.render(
-  // <Provider store = {store}>
+  <Provider store = {store}>
     <AuthContextProvider>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </AuthContextProvider>
-  // </Provider>
+  </Provider>
     
   ,
   document.getElementById('root')
