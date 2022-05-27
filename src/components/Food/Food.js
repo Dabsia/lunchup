@@ -3,10 +3,11 @@ import './Food.css'
 import { connect } from 'react-redux'
 import { addItem } from '../../redux/reducers/cart.action'
 
+
 const Food = ({food, addItem}) => {
     const { name, imageUrl, price } = food
 
-
+  
 
     return (
         
@@ -18,7 +19,7 @@ const Food = ({food, addItem}) => {
                     <h3 className='foodName'>{name}</h3>
                     <p className='foodPrice'>₦{price}</p>
                 </div>
-                <button onClick={() => addItem  } className='AddToCartBtn'>Add to Tray</button>
+                <button onClick={() => addItem(food)} className='AddToCartBtn'>Add to Tray</button>
             </div>
           
   )

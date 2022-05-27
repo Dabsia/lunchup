@@ -1,22 +1,22 @@
 import React from 'react'
-import favicon from '../../assets/favicon.png'
 import './TrayItem.css'
 
-// { name, price, imageUrl }
-const TrayItem = () => {
+
+
+const TrayItem = ({food : { name, price, imageUrl, quantity }}) => {
   return (
         <div className='trayFoodHolder'>
             <div className='trayFoodDetails'>
-                <img src={favicon} className = 'trayFoodImage' alt='favicon' />
+                <img src={imageUrl} className = 'trayFoodImage' alt={name} />
                 <div className='trayFoodItems'>
-                    <p className='trayFoodName'>Chicken Burger</p>
-                    <p className='trayFoodprice'>₦1200</p>
+                    <p className='trayFoodName'>{name}</p>
+                    <p className='trayFoodprice'>₦{price}</p>
                 </div>
             </div>
             <div className='trayFoodButtons'>
                 <div className='cartOptionsBtnContainer'>
                     <button className='cartOption'>+</button>
-                    <p className='value'>1</p>
+                    <p className='value'>{quantity}</p>
                     <button className='cartOption'>-</button>
                 </div>
                 <i className="ri-delete-bin-6-line trash"></i>
@@ -24,5 +24,10 @@ const TrayItem = () => {
           </div>
   )
 }
+
+
+
+
+
 
 export default TrayItem

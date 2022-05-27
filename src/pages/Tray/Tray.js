@@ -2,16 +2,23 @@ import React, {useState, useEffect} from 'react'
 import EmptyTray from '../../components/EmptyTray/EmptyTray'
 import Navigation from '../../components/Navigation/Navigation'
 import TrayWithItems from '../../components/TrayWithItems/TrayWithItems'
+import { connect } from 'react-redux'
 
-
-const Tray = () => {
+const Tray = ({cartItems}) => {
 
   const [istrayEmpty, setIsTrayEmpty] = useState(true)
 
   
     useEffect(() => {
-      setIsTrayEmpty(false)
-    }, [])
+      
+          if (cartItems.length > 0) {
+            setIsTrayEmpty(false)
+        }
+          else {
+          setIsTrayEmpty(true)   
+        }
+      
+    }, [cartItems.length])
 
 
     return (
@@ -22,4 +29,9 @@ const Tray = () => {
   )
 }
 
-export default Tray
+const mapStateToProps = (state) => ({
+    cartItems: state.cartItems
+})
+
+
+export default connect(mapStateToProps)(Tray)

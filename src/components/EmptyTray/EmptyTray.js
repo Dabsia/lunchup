@@ -9,7 +9,6 @@ const EmptyTray = () => {
     const Navigate = useNavigate()
 
     const authCtx = useContext(AuthContext)
-    console.log(authCtx.isLoggedIn)
 
     const trayRedirect = () => {
         if (authCtx.isLoggedIn === true) {

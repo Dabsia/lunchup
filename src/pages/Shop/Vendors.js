@@ -18,7 +18,7 @@ export const shopVendorsList = [
         
     },
     {       id: 'dominos_pizza', 
-        logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFHo0LUQ1HXo0YBe4WglJrSvGyYZZbvC_1dw&usqp=CAU', 
+        logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROeTza6KUhUnzmhUKut-YRUHEW05A2Rowtdg&usqp=CAU', 
         name: 'Dominos Pizza', 
         location: 'Okha',
         
