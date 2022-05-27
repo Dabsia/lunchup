@@ -3,17 +3,20 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import store from './redux/productstore'
+import { persistor } from './redux/productstore';
 import {Provider} from 'react-redux'
 import {BrowserRouter} from 'react-router-dom'
 import {AuthContextProvider} from './store/auth-context'
-
+import {PersistGate} from 'redux-persist/integration/react'
 
 
 ReactDOM.render(
   <Provider store = {store}>
     <AuthContextProvider>
       <BrowserRouter>
-        <App />
+        <PersistGate persistor={persistor}>
+          <App />
+        </PersistGate>
       </BrowserRouter>
     </AuthContextProvider>
   </Provider>
