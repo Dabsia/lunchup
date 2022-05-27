@@ -17,11 +17,11 @@ const TrayWithItems = ({cartItems,totalPrice}) => {
           
           <div className='moneyToSpend'>
               <p className='subtotal'>subtotal</p>
-              <p className='subtotalValue'>₦1800</p>
+              <p className='subtotalValue'>₦{totalPrice}</p>
           </div>
           <div className='moneyToSpend'>
               <p className='deliveryFee'>Delivery Fee</p>
-              <p className='deliveryFeeValue'>₦500</p>
+              <p className='deliveryFeeValue'>₦200</p>
           </div>
           <div className='moneyToSpend'>
               <p className='total'>Total</p>
@@ -35,7 +35,7 @@ const TrayWithItems = ({cartItems,totalPrice}) => {
 const mapStateToProps = (state) => ({
     cartItems: state.cartItems,
     totalPrice : state.cartItems.reduce((acc, cartItem) => acc + cartItem.quantity * cartItem.price,
-      0)
+        0)
 })
 
 export default connect(mapStateToProps)(TrayWithItems)
