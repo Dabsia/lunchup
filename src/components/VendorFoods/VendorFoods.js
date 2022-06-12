@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Navigation from '../Navigation/Navigation'
 import AppDesc from '../AppDesc/AppDesc'
 import { useParams } from 'react-router-dom'
@@ -6,9 +6,21 @@ import Foods from '../Foods/Foods'
 import { connect } from 'react-redux'
 import Footer from '../Footer/Footer'
 import './VendorFoods.css'
+import Modal from '../Modal/Modal'
 
 
 const VendorFoods = ({itemCount}) => {
+
+  const [modalBtn, setModalBtn] = useState(false)
+
+  const showTrayModal = () => {
+    setModalBtn(true)
+  }
+
+  const CloseModal = () => {
+    setModalBtn(false)
+  }
+
   
   const { vendorId } = useParams();
   return (
@@ -26,8 +38,10 @@ const VendorFoods = ({itemCount}) => {
 
           </div>
           </div>
-        <div className='count'>{ itemCount}</div>
-          <Foods />
+        <div className='count' onClick={() => {showTrayModal()}} >{ itemCount}</div>
+        
+        <Foods />
+        {modalBtn && <Modal CloseModal={CloseModal}/>}
       </div>
       <AppDesc />
       <Footer />
