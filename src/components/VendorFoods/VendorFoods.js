@@ -26,7 +26,7 @@ const VendorFoods = ({itemCount}) => {
 
           </div>
           </div>
-        <div  className='count'>{ itemCount}</div>
+        <div className='count'>{ itemCount}</div>
           <Foods />
       </div>
       <AppDesc />

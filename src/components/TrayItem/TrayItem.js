@@ -9,8 +9,9 @@ const TrayItem = ({ food, clearItem, addItem, removeItem }) => {
 
   return (
         <div className='trayFoodHolder'>
+          <img src={imageUrl} className='trayFoodImage' alt={name} />
+          <div className='foodDetailsContainer'>
             <div className='trayFoodDetails'>
-                <img src={imageUrl} className = 'trayFoodImage' alt={name} />
                 <div className='trayFoodItems'>
                     <p className='trayFoodName'>{name}</p>
                     <p className='trayFoodprice'>₦{price}</p>
@@ -24,6 +25,7 @@ const TrayItem = ({ food, clearItem, addItem, removeItem }) => {
                 </div>
                 <i onClick={() => clearItem(food)} className="ri-delete-bin-6-line trash"></i>
             </div>
+          </div>
           </div>
   )
 }

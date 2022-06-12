@@ -15,7 +15,18 @@
     color: var(--main-color);
     font-size: 1.1rem;
 }
-
+.count{
+    background-color: var(--main-color);
+    width: 2.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    height: 2.3rem;
+    color: #fff;
+    position: absolute;
+    right: 2rem;
+}
 
 @media screen and (max-width: 650px) {
     .pageLayout{

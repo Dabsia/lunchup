@@ -1,6 +1,6 @@
 .trayFoodHolder{
     display: flex;
-    /* justify-content: space-between; */
+    margin-bottom: 1rem;
     
 }
 
@@ -8,10 +8,11 @@
 .trayFoodDetails{
     display: flex;
     justify-content: space-between;
-    
+    margin-right: 1rem;    
 }
+
 .trayFoodItems{
-    margin-left: 2rem;
+    margin-left: 0;
 }
 .trayFoodprice{
     color: var(--main-color);
@@ -23,6 +24,7 @@
 .cartOptionsBtnContainer{
     display: flex;
     justify-content: space-between;
+    margin-right: 2rem;
 }
 
 .trayFoodImage{
@@ -38,12 +40,58 @@
     height: 1.6rem;
     font-size: 1.5rem;
     border-radius: .3rem;
+    cursor: pointer;
 }
 .trash{
     color: var(--main-color);
     font-size: 1.6rem;
+    cursor: pointer;
 }
 .trayFoodButtons{
     display: flex;
     justify-content: space-between;
+    
+}
+.foodDetailsContainer{
+    margin-left: 1rem;
+}
+.value{
+    margin: 0 .4rem;
+}
+
+@media screen and (max-width: 700px) {
+    
+    .trayFoodprice {
+        font-size: .7rem;
+    }
+        .trayFoodName {
+            margin-bottom: 0;
+            font-size: .9rem;
+    }
+        .trayFoodDetails {
+            width: 100%;
+        }
+}
+
+@media screen and (max-width: 500px) {
+    
+    .cartOptionsBtnContainer{
+        margin-right: 1.3rem;
+    }
+    .trayFoodItems{
+        margin-left: 0;
+    }
+    
+}
+
+@media screen and (max-width: 470px) {
+    .foodDetailsContainer {
+        display: flex;
+        flex-direction: column;
+    }
+        .trayFoodDetails {
+            width: 100%;
+            display: block;
+            margin: 0;
+        }
 }

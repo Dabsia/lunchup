@@ -1,0 +1,18 @@
+.cartItems{
+    height: 60vh;
+    overflow-y: scroll;
+
+}
+.moneyToSpend{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.total{
+    color: var(--main-color);
+}
+.yourOrderText{
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
