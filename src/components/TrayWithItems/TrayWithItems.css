@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: .3rem;
 }
 .total{
     color: var(--main-color);
