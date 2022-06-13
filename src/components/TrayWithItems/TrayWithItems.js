@@ -1,14 +1,19 @@
 import React from 'react'
 import './TrayWithItems.css'
 import TrayItem from '../TrayItem/TrayItem'
+import { useSelector, useDispatch } from 'react-redux'
 import { connect } from 'react-redux'
 import PaystackPop from '@paystack/inline-js'
+import { removeAllItems } from '../../redux/reducers/cart.action'
 
 
-const TrayWithItems = ({cartItems,totalPrice}) => {
-
+const TrayWithItems = ({ cartItems, totalPrice }) => {
+    const cartState = useSelector(state => state.cartItems)
+    const dispatch = useDispatch()
+    
     const payWithPayStack = () => {
-
+        
+        console.log(cartState)
 
         const payStack = new PaystackPop()
         payStack.newTransaction({
@@ -18,6 +23,7 @@ const TrayWithItems = ({cartItems,totalPrice}) => {
             onSuccess(transaction) {
                 let message = `Payment Complete! Reference ${transaction.reference}`
                 alert(message)
+                dispatch(removeAllItems())
             },
             onCancel() {
                 alert('Do you want to cancel the transaction')
