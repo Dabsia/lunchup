@@ -38,6 +38,8 @@ const SignUp = () => {
       phoneNumber: enteredPhone
     }
 
+    localStorage.setItem('userEmail', user.email )
+
     setIsLoading(true)
     fetch(`https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=${API_KEY}`, {
       method: 'POST',

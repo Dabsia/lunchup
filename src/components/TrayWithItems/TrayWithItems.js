@@ -2,9 +2,28 @@ import React from 'react'
 import './TrayWithItems.css'
 import TrayItem from '../TrayItem/TrayItem'
 import { connect } from 'react-redux'
+import PaystackPop from '@paystack/inline-js'
 
 
 const TrayWithItems = ({cartItems,totalPrice}) => {
+
+    const payWithPayStack = () => {
+
+
+        const payStack = new PaystackPop()
+        payStack.newTransaction({
+            key: 'pk_test_d6ce738cabd2d7c798c5f2c4a3931cc6efbe7714',
+            amount: totalPrice * 100,
+            email: localStorage.getItem('userEmail'),
+            onSuccess(transaction) {
+                let message = `Payment Complete! Reference ${transaction.reference}`
+                alert(message)
+            },
+            onCancel() {
+                alert('Do you want to cancel the transaction')
+            }
+        })
+    }
 
   return (
       <div className='pageLayout'>
@@ -21,7 +40,7 @@ const TrayWithItems = ({cartItems,totalPrice}) => {
             <h3 className='total'>Total</h3>
             <p className='totalValue'>₦{totalPrice}</p>
         </div>
-        <button className='button'>Order Now</button>
+          <button onClick={() => {payWithPayStack()}} className='button'>Order Now</button>
       </div>
   )
 }
