@@ -1,15 +1,26 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import './TrayWithItems.css'
 import TrayItem from '../TrayItem/TrayItem'
 import { useSelector, useDispatch } from 'react-redux'
+import { useNavigate } from 'react-router'
+import AuthContext from '../../store/auth-context'
 import { connect } from 'react-redux'
 import PaystackPop from '@paystack/inline-js'
 import { removeAllItems } from '../../redux/reducers/cart.action'
 
 
+
+
+
+
 const TrayWithItems = ({ cartItems, totalPrice }) => {
     const cartState = useSelector(state => state.cartItems)
     const dispatch = useDispatch()
+
+    const navigate = useNavigate()
+
+    const authCtx = useContext(AuthContext)
+    const isLoggedIn = authCtx.isLoggedIn
     
     const payWithPayStack = () => {
         
@@ -32,7 +43,7 @@ const TrayWithItems = ({ cartItems, totalPrice }) => {
     }
 
   return (
-      <div className='pageLayout'>
+      <div className='cartLayout'>
         <h2 className='yourOrderText'>Your Order</h2>
         <div className='cartItems'>
             {
@@ -46,7 +57,10 @@ const TrayWithItems = ({ cartItems, totalPrice }) => {
             <h3 className='total'>Total</h3>
             <p className='totalValue'>₦{totalPrice}</p>
         </div>
-          <button onClick={() => {payWithPayStack()}} className='button'>Order Now</button>
+          {isLoggedIn ?
+              <button onClick={() => { payWithPayStack() }} className='button'>Order Now</button> :
+              <button onClick={() => {navigate('/signin') }} className='button'>Log In to proceed</button>
+          }
       </div>
   )
 }

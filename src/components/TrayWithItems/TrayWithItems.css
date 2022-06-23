@@ -1,6 +1,13 @@
+.cartLayout{
+    width: 50vw;
+    margin: auto;
+    padding: 1rem;
+}
+
 .cartItems{
     height: 60vh;
     overflow-y: scroll;
+    
 
 }
 .moneyToSpend{
@@ -15,4 +22,12 @@
 .yourOrderText{
     color: var(--main-color);
     margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+    .cartLayout{
+        width: 80vw;
+        padding: .5rem;
+        margin: auto;
+    }
 }

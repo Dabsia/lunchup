@@ -38,7 +38,9 @@ const VendorFoods = ({itemCount}) => {
 
           </div>
           </div>
-        <div className='count' onClick={() => {showTrayModal()}} >{ itemCount}</div>
+        <div className='count' onClick={() => { showTrayModal() }} >
+          <i className="ri-shopping-basket-fill basket"></i>
+          <p className='countValue'>{itemCount}</p></div>
         
         <Foods />
         {modalBtn && <Modal CloseModal={CloseModal}/>}
