@@ -1,0 +1,40 @@
+.notFoundContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+.notFoundItems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+}
+.notFoundImage{
+    width: 100%;
+}
+.notFoundText{
+    margin: .6rem 0;
+}
+
+@media screen and (max-width: 800px){
+    .notFoundItems{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .notFoundItems {
+        width: 80%;
+    }
+    .notFoundText{
+        font-size: .8rem;
+    }
+}
+
+@media screen and (max-width:330px) {
+    .notFoundItems {
+        width: 90%;
+    }
+}
