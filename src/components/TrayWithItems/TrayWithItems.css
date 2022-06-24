@@ -31,3 +31,11 @@
         margin: auto;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .cartLayout {
+        width: 80vw;
+        padding: .5rem;
+        margin: auto;
+    }
+}
