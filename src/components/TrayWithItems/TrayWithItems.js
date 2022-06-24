@@ -30,7 +30,7 @@ const TrayWithItems = ({ cartItems, totalPrice }) => {
         payStack.newTransaction({
             key: 'pk_test_d6ce738cabd2d7c798c5f2c4a3931cc6efbe7714',
             amount: totalPrice * 100,
-            email: localStorage.getItem('userEmail'),
+            email: 'dabojohnson98@gmail.com',
             onSuccess(transaction) {
                 let message = `Payment Complete! Reference ${transaction.reference}`
                 alert(message)
